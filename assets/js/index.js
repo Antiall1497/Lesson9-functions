@@ -115,7 +115,10 @@ function Car(color, speed, condition) {
     this.color = color;
     this.speed = speed;
     this.condition = condition;
-}
+
+ this.speeed = function () {
+    return `Cars speed is 70 km/h` 
+};
 
 const car1 = new Car("yellow", "70 km per hour", "is moving");
 
