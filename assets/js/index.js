@@ -111,15 +111,133 @@
 
 
 
-function Car(color, speed, condition) {
-    this.color = color;
-    this.speed = speed;
-    this.condition = condition;
+// function Car(color, speed, condition) {
+//     this.color = color;
+//     this.speed = speed;
+//     this.condition = condition;
 
- this.speeed = function () {
-    return `Cars speed is 70 km/h` 
+//  this.speeed = function () {
+//     return `Cars speed is 70 km/h` 
+// };
+
+// const car1 = new Car("yellow", "70 km per hour", "is moving");
+
+// console.log(car1);
+
+// function Box(size, color, content) {
+//     this.content = content;
+//     this.size = size;
+//     this.color = color;
+
+//     this.open = function () {
+//         return `${this.content} opened`;
+//     };
+// }
+
+// function Crate(size, material, content) {
+//     this.content = content;
+//     this.size = size;
+//     this.material = material;
+// }
+
+// Crate.prototype = new Box();
+
+// const crate1 = new Crate("bananas", "big", "wood");
+
+//  console.log(crate1);
+// console.log(crate1.open());
+
+
+// function User(isMale, age, name) {
+//     this.isMale = isMale;
+//     this.age = age;
+//     this.name = name;
+
+//     this.sayHi = function () {
+//         return `My name is Alex`;
+//     };
+// }
+
+// function Employee(IsMale, age, name) {
+//     this.IsMale = IsMale;
+//     this.age = age;
+//     this.name = name;
+// }
+
+// Employee.prototype = new User();
+
+// const employee1 = new Employee("male", "20", "Alex");
+
+// console.log(employee1);
+// console.log(employee1.sayHi());
+
+
+
+// const string = "store";
+
+// let city1 = string;
+// let city2 = string;
+
+// console.log(city1);
+// console.log(city2);
+
+// city1 += " very big city store";
+
+// console.log(city1);
+
+// const controlObj = {
+//     content: "store",
+//     test: "city"
+// };
+
+// const anotherObj = controlObj;
+
+// console.log(controlObj);
+// console.log(anotherObj);
+
+// const cityObj = anotherObj;
+
+// console.log(cityObj);
+
+
+// function massive(arr1){
+//   const arr = [ 
+//  111,
+//  222,
+//  true,
+//  "string",
+//  function () {},
+//  555,
+//  666,
+//  777,
+//  false,
+//   ];
+
+// }
+
+// console.log(massive);
+
+// console.log(111, 222, true, "string", 555, 666, 777, false);
+
+
+const controlArray = ["test", 12345,"test3","test4",true];
+
+function MyArray() {
+this.length = 0;
+
+for(let i = 0; i < arguments.length; i++) {
+  this[this.length] = arguments[i];
+
+  this.length++;
+}
+
+this.push = function(controlArray) {
+  return controlArray;
+}
+this.pop = function(controlArray) {
+  this.length = 20;
 };
+}
 
-const car1 = new Car("yellow", "70 km per hour", "is moving");
-
-console.log(car1);
+console.log(MyArray);
+console.log(MyArray.length);
