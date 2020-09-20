@@ -1,0 +1,63 @@
+body{
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.imageForAvatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.userCardContainer{
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+
+}
+
+.userCardContainer{
+    background-color: beige;
+    border-radius: 5%;
+    align-items:center;
+}
+
+div {
+    background-color: beige;
+
+}
+
+.userName{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #738EFE;
+}
+
+button:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+.secondContainer {
+    padding: 20px;
+}
