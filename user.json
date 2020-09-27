@@ -1,32 +1,27 @@
 [{
-    "id": "da",
+    "id": "111",
     "name": "test",
     "surname": "test,test",
-    "age": "21"  
+    "age": "21",
+    "post": "deputy of administration"
 }, 
 
 {
+    "id": "222",
     "name": "notatest",
     "surname": "TeSt",
-    "age": "22"
+    "age": "22",
+    "post": "administrator"
 },
 
 {
+    "id": "333",
     "name": "Ivan",
     "surname": "Ivanov",
-    "age": "54"
-},
+    "age": "54",
+    "post": "manager"
+}, 
 
-{
-    "name": "Alexander",
-    "surnam": "Alexandrov",
-    "age": "20"
-},
 
-{
-    "name": "Yaroslav",
-    "surname": "Shestakoff",
-    "age": "20"
-}
 
-]
+
