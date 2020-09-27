@@ -26,7 +26,9 @@ function createUserCard(user) {
   const img = document.createElement('img');
   const button = document.createElement('button');
 
-  userName.textContent = user.firstName;
+  const name = `${user.firstName} ${user.lastName}`;
+
+  userName.textContent = name.trim() || 'Anon' ;
   position.textContent = 'manager';
   img.src = user.profilePicture;
   button.textContent = 'button';
@@ -39,8 +41,11 @@ function createUserCard(user) {
   button.classList.add('button');
 
   mainContainer.append(secondContainer, button);
-  secondContainer.append(userName, position, img);
+  secondContainer.append(img,userName, position );
+
+  // img.addEventListener(error, img);
 
   return mainContainer
+
 };
 
